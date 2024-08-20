@@ -1,0 +1,25 @@
+
+'''
+
+@Author: Pratik Patil
+@Date: 2024-08-19
+@Last Modified by: Pratik Patil
+@Last Modified time: 2024-08-19
+@Title : Python Program for Checkin gmultiple key exists or not.
+
+
+'''
+
+def check_multiplekeys(dictionary,keys):
+    for key in keys:
+        if key not in dictionary:
+            return False
+    return True
+
+def main():
+    my_dict = {'name': 'Alice', 'age': 25, 'job': 'Developer'}
+    keys_to_check = ['name', 'age']
+    result=check_multiplekeys(my_dict,keys_to_check)
+    print(result)
+
+main()
